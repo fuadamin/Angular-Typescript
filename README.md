@@ -47,8 +47,3 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-
-# More ?
-
-If you need templates for your projects you can also take a look at: 
-    1. [MuLTWA] (https://github.com/GeoCastello/MuLTWA.git) : Javascript web application for visualizing weather condistions on a leaflet map.

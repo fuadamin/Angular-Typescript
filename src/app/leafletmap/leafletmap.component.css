@@ -1,0 +1,205 @@
+.leafletMapComponent 
+{ 
+   	position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+	z-index: 1;
+	display: block;
+	filter: saturate(2);
+}
+
+#bottomContainer {
+	z-index: 5;
+	position: fixed;
+	right: 125px;
+	bottom: 27px;
+	width: auto;
+	height: 83px;
+	overflow: hidden;
+	opacity: 0.9;
+	transition: all 0.4s ease-in-out;
+	border-radius: 12px;
+	margin:10px; 
+}
+
+.layersToggle {
+	z-index: 5;
+	position: fixed;
+	right: 60px;
+	bottom: 47px;
+	width: 63px;
+	height: 63px;
+	margin-left:0px;
+	overflow: hidden;
+	background-color: rgba(0, 0, 0, 0.8);
+	opacity: 0.9;
+	transition: all 0.4s ease-in-out;
+	border-radius: 9px;
+	cursor: pointer;
+	transition: all 0.8s ease-in-out;
+	box-shadow: 0 0 35px rgba(0, 0, 0, 0.8);
+	filter: saturate(4);
+	background-size: cover; 
+    background-position: center;
+}
+
+.baseLayers {
+	position: relative;
+	float: right;
+	padding-right: 10px;
+	padding-left: 10px;
+    padding-bottom: 10px;
+	width: auto;
+	height: auto;
+	transition: all 1.0s ease-in-out;
+	background-color: rgba(0, 0, 0, 0.4);
+	border-radius: 12px;
+}
+
+.baseLayers:hover {
+	background-color: rgba(0, 0, 0, 0.6);
+	box-shadow: 0 0 35px rgba(0, 0, 0, 0.8);
+}
+
+
+.layersToggle:hover {
+	box-shadow: 0 0 35px rgba(81, 203, 238, 1);
+}
+
+.latlongMouse {
+	z-index:5;
+	position: fixed;
+	float: left;
+	left: 0;
+	bottom: 0;
+	padding: 2px;
+	font-size: 10px;
+	color: #626262;
+	min-width:250px;
+	border: none;
+	background-color:  rgba(255, 255, 255, 0.5);
+	}
+
+.iconDescription {
+	position: absolute;
+	background-color: rgba(255, 255, 255, 0.9);
+	height:20%;
+	width: 100%;
+	margin:0;
+	padding:0;
+	text-align: center;
+    font-size: 10px;
+	bottom:0;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+
+.icon1 {
+	position: relative;
+	float: right;
+	margin-left: 5px;
+	min-width: 63px;
+	min-height: 63px;
+	background-color: blue;
+	border-radius: 3px;
+	background-image: url('../../assets/icons/satellitenbild.png');
+	background-size: cover; 
+    background-position: center;
+    cursor: pointer;
+}
+
+.icon2 {
+	position: relative;
+	float: right;
+	margin-left: 5px;
+	margin-right: 5px;
+	min-width: 63px;
+	min-height: 63px;
+	background-color: green;
+	border-radius: 3px;
+	background-image: url('../../assets/icons/relief_maps4free.png');
+	background-size: cover; 
+    background-position: center;
+    cursor: pointer;
+}
+
+.icon3 {
+	position: relative;
+	float: right;
+	margin-left: 5px;
+	margin-right: 5px;
+	min-width: 63px;
+	min-height: 63px;
+	background-color: red;
+	border-radius: 3px;
+	background-image: url('../../assets/icons/thunderforest_landscape.png');
+	background-size: cover; 
+    background-position: center;
+    cursor: pointer;
+}
+
+.icon4 {
+	position: relative;
+	float: right;
+	margin-left: 5px;
+	margin-right: 5px;
+	min-width: 63px;
+	min-height: 63px;
+	background-color: orange;
+	border-radius: 3px;
+	background-image: url('../../assets/icons/esri_world_topomap.png');
+	background-size: cover; 
+    background-position: center;
+    cursor: pointer;
+}
+.icon5 {
+	position: relative;
+	float: right;
+	margin-right: 5px;
+	min-width: 63px;
+	min-height: 63px;
+	background-color: white;
+	border-radius: 3px;
+	background-image: url('../../assets/icons/openstreetmap_de.png');
+	background-size: cover; 
+    background-position: center;
+    cursor: pointer;
+}
+
+.icon1, .icon2, .icon3, .icon4, .icon5 {
+    border-color:white;
+	margin-top:10px;
+	opacity:0.8;
+	filter: saturate(3);
+	transition: all 0.3s ease-in-out;
+}
+
+.icon1:hover, .icon2:hover, .icon3:hover, .icon4:hover , .icon5:hover {
+    box-shadow: 0 0 35px rgba(255, 255, 255, 0.9);
+	border: 2px solid white;
+	transition: all .3s ease-in-out;
+	border-radius: 9px;
+	opacity:1;
+	filter: saturate(4);
+}
+
+
+.hide_layers{
+	margin-right: -600px;
+	transition: all 0.8s ease-in-out;
+}
+
+.show_layers{
+	opacity: 1;
+	transition: all 0.8s ease-in-out;
+}
+
+.grow {
+	opacity:1;
+}
+
+.custom {
+	color:blue;
+}

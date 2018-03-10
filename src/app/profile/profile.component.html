@@ -1,0 +1,185 @@
+<div id="app-profile" class="ProfileComponent">
+    <div id="sidebar-container-fluid" class = "container-fluid">  
+        <div class="dropdown">
+            <button class="fa fa-bars sidebartoggle" type="button" data-toggle="dropdown"></button>
+            <ul class="dropdown-menu" id="dropdown-menu">
+                <li><button class="fa fa-area-chart sidebarItems" id="item01" type="button"></button></li>
+                <li><button class="fa fa-line-chart sidebarItems" id="item02" type="button"></button></li>
+                <li><button class="fa fa-question-circle sidebarItems" id="item03" type="button"></button></li>
+                <li><button class="fa fa-info-circle sidebarItems" id="item04" type="button"></button></li>
+                <li><button class="fa fa-users sidebarItems" id="item05" type="button"></button></li>
+            </ul>
+        </div>
+
+        <div class="container informationBlock" id="informationBlock">
+            <div id="d3-chart" #chart class="container-fluid">
+                <svg width="800" height="400" id="canvas"></svg>
+            </div>
+        </div>
+
+        <div class="container informationBlock" id="geological">
+            <div><h5>Geological Profile: NOT AVAILABLE</h5></div>
+        </div>
+
+        <div class="container informationBlock" id="moreInfo">
+            <div><h5>NOT AVAILABLE</h5></div>
+        </div>
+
+        <div class="container informationBlock" id="legend">
+            <div id= "header">
+            <h5>Legend</h5>
+            </div>
+            <table> 
+                <tr>
+                <th> <img src="https://www.openstreetmap.org/assets/key/mapnik/admin-fcd748b324e5678c672d41b4af3baa9de115a6f8ee57855f5634091e59178a29.png" alt="Admin">
+                </th>
+                <td> Administrative boundary </td>
+                </tr> 	
+                <tr>
+                    <td > <img src="https://www.openstreetmap.org/assets/key/mapnik/motorway-f2260495a1f2d4ff85a71b17b983d993ca900e6eed2e5760e018aa1ab3b10608.png" alt="Motorway">
+                    </td>
+                    <td > Motorway</td>
+                </tr> 
+                <tr >
+                    <td> <img src="https://www.openstreetmap.org/assets/key/mapnik/mainroad12-d256cbb974c90428d0202df563de3fac7c590b5fc5bf71a7c90beb0bd7627b8b.png" alt="Mainroad">
+                    </td>
+                    <td > Main road </td> 
+                </tr> 
+                <tr >
+                    <td> <img src="https://www.openstreetmap.org/assets/key/mapnik/mainroad-0e0a0b6ad8c79c4065c612448d46d4342c6bc6e906907d5208653ee81bda1f68.png" alt="Mainroad">
+                    </td>
+                    <td > Main road </td> 
+                </tr>
+                <tr >
+                    <td> <img src="https://www.openstreetmap.org/assets/key/mapnik/mainroad7-e89046bd9381879a434ea82f001d2946f8de58db16099f1f5f42d14e45ef99cc.png" alt="Mainroad">
+                    </td>
+                    <td > Main road </td> 
+                </tr>
+                <tr >
+                    <td> <img src="https://www.openstreetmap.org/assets/key/mapnik/rail13-b0a0becf089855a13c7688c6238d6c2a0bf443e3456d9efb8b8b93bfbcbd34a2.png" alt="Rail">
+                    </td>
+                    <td >Railway</td>             
+                </tr> 
+                <tr >
+                    <td> <img src="https://www.openstreetmap.org/assets/key/mapnik/rail-c8acf6256f9b2ed0280d11ea5f59545f13813823812b6e575d0427defbf479bf.png" alt="Rail">
+                    </td>
+                    <td >Railway</td>             
+                </tr>
+                <tr >
+                    <td > <img src="https://www.openstreetmap.org/assets/key/mapnik/lake-5efdf5786d855ade38f1e81ac93ec9096f1a0490cdca96f1f3d82dc7c7d155bb.png" alt="Lake">     
+                    </td>
+                    <td > Lake and reservoir </td>
+                </tr> 
+                <tr >
+                    <td > <img src="https://www.openstreetmap.org/assets/key/mapnik/resident-5a385778712dd3566d9e8931bbe1d1fc05301e3dd79589ebd1dddb7ea5e029f5.png" alt="Residentila">     
+                    </td>
+                    <td > Residential Area </td>
+                </tr>
+                <tr >
+                    <td > <img src=" https://www.openstreetmap.org/assets/key/mapnik/forest-c33c4d8a216a942b9a4aeff91eda5f089d4fa842c19edb9a45e490367ac40c07.png" alt="Forest">     
+                    </td>
+                    <td > Forest </td>
+                </tr> 
+                <tr >
+                    <td > <img src=" https://www.openstreetmap.org/assets/key/mapnik/industrial-17a66e94474e40487a1efc0c13b255100ca463c57af11b3f9fc939500686bef3.png" alt="Industries">     
+                    </td>
+                    <td > Industrial Area </td>
+                </tr> 
+                <tr >
+                    <td > <img src=" https://www.openstreetmap.org/assets/key/mapnik/bridge-a1c5f8de10583cf8f3851fd4ac47fba883aa40714339f30dd6681d8a5ea00ae3.png" alt="Bridge">     
+                    </td>
+                    <td > Bridge</td>
+                </tr>    		
+                <tr >
+                    <td > <img src=" https://www.openstreetmap.org/assets/key/mapnik/brownfield-63ba90b7e6c281346d0b703e840897b8fb89dbb217daac519588d8510c9f7cb9.png" alt="Brownfield">     
+                    </td>
+                    <td > Brown Field</td>
+                </tr>
+                <tr>
+                    <td > <img src=" https://www.openstreetmap.org/assets/key/mapnik/building-85a4a5a48b8308d5783dc6030efb620b0bd5bb1f1b1c6feb735bf7f98ffdff75.png" alt="Building">     
+                    </td>
+                    <td > Building</td>
+                </tr>		
+                <tr>
+                    <td > <img src=" https://www.openstreetmap.org/assets/key/mapnik/cycleway-37343ed25a3c49e68e97f0d46e553070e9a14a8d9fb6031de712ae50b3408e7e.png" alt="Cycle way">     
+                    </td>
+                    <td > Cycle Way</td>
+                </tr>
+                <tr>
+                    <td > <img src=" https://www.openstreetmap.org/assets/key/mapnik/park-4841ace6fa6932a96d42343743ea3407e0087f1dfb553134f4f9c16c4229636b.png" alt="Park">     
+                    </td>
+                    <td > Park</td>
+                </tr>
+                <tr>
+                    <td > <img src="  https://www.openstreetmap.org/assets/key/mapnik/station-07bfe38c97ae095efc62e4d59764ca907d85b8b7ee9532e820f2100455998161.png" alt="Station">     
+                    </td>
+                    <td > Station</td>
+                </tr>
+            </table>
+            <div>
+                    <img src="http://www.clker.com/cliparts/K/9/z/s/N/Q/mountain-peak-hi.png" style="width:12px;height:12px;"> - Key Location<br>
+                    <img src="http://www.newdesignfile.com/postpic/2014/08/red-circle-x-icon_366416.png" style="width:12px;height:12px;"> - Profile Vertex<br>
+                    <img src="http://flyosity.com/images/_blogentries/networkicon/step4a.png" style="width:12px;height:12px;"> - Search Locations
+            </div>
+        </div>
+
+        <div class="container informationBlock" id="impressum">
+
+            <div class = "row" id ="stakeholders">
+                <div class="media">
+                <div class="media-left">
+                    <img src="https://www.univention.com/wp-content/uploads/2015/05/Logo_LMZ-.png" class="media-object" style="width:60px">
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">Landesmedienzentrum</h4>
+                    <p>Baden-Württemberg</p>
+                    <small class="text-muted">GeoPortal</small>
+                </div>
+                </div><br>
+            </div>
+            <div class = "row" id ="stakeholders" onclick="location.href='https://www.hs-karlsruhe.de/gmc/';">
+                <div class="media">
+                <div class="media-left">
+                    <img src="https://www.xing.com/img/custom/events/events_files/b/5/4/1211220/square256/Logo_hska_ot.jpg?1491293403" class="media-object" style="width:60px">
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">Hochschule Karlsruhe – Technik und Wirtschaft (HsKA)</h4>
+                    <p>Studiengang Geomatics, Internationaler Master</p>
+                    <small class="text-muted">Fakultät für Informationsmanagement und Medien (IMM)</small>
+                </div>
+                </div>
+            </div><hr />
+
+
+            <div class = "row pre-scrollable" id="geomaticsGroup">
+                <div class="list-group">
+                <h5>Geomatics Team 2017</h5>
+                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1" >Anja Fürst</h5><a class="fa fa-linkedin" aria-hidden="true" href="https://www.linkedin.com/in/anja-fürst-136899144" target="_blank"></a> 
+                    <small class="text-muted">Deutschland</small>
+                    </div>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1" >B M Fuad Amin </h5><a class="fa fa-linkedin" aria-hidden="true" href="https://www.linkedin.com/in/fuadamin/" target="_blank"></a> 
+                    <small class="text-muted">Bangladesch</small>
+                    </div>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">Olumide Igbiloba </h5><a class="fa fa-linkedin" aria-hidden="true" href="https://www.linkedin.com/in/olumide-igbiloba/" target="_blank"></a> 
+                    <small class="text-muted">Nigeria</small>
+                    </div>
+                </a>
+                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">Md. Raqibul  Islam</h5><a class="fa fa-linkedin" aria-hidden="true" href="https://www.linkedin.com/in/olumide-igbiloba/" target="_blank"></a> 
+                    <small class="text-muted">Bangladesch</small>
+                    </div>
+                </a>
+                </div>
+            </div><hr />
+        </div>
+    </div>
+</div>

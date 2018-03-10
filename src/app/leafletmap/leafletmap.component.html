@@ -1,0 +1,17 @@
+<div id="leaflet-map-component" class="leafletMapComponent"></div>
+
+    <div class="layersToggle" [ngStyle]="{'background-image': 'url(' + currentIcon + ')'}"><div class="iconDescription">{{currentproviderDescription}}</div></div> 
+        
+    <div id="bottomContainer" class="container-fluid">
+        <div class="baseLayers">
+            <div class="icon1" (click)="_changeBasemapLayer(0)"><div class="iconDescription">{{this._mapService.baseMaps[0].description}}</div></div>
+            <div class="icon2" (click)="_changeBasemapLayer(1)"><div class="iconDescription">{{this._mapService.baseMaps[1].description}}</div></div>
+            <div class="icon3" (click)="_changeBasemapLayer(2)"><div class="iconDescription">{{this._mapService.baseMaps[2].description}}</div></div>
+            <div class="icon4" (click)="_changeBasemapLayer(3)"><div class="iconDescription">{{this._mapService.baseMaps[3].description}}</div></div>
+            <div class="icon5" (click)="_changeBasemapLayer(4)"><div class="iconDescription">{{this._mapService.baseMaps[4].description}}</div></div>
+        </div>
+    </div>
+
+<input class="latlongMouse" value="{{coords}}">
+
+<app-profile></app-profile>

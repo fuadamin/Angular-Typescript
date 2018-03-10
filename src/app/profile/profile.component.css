@@ -1,0 +1,172 @@
+#app-profile {
+   	position: fixed;
+    width: auto;
+    height: auto;
+    left: 0;
+    top: 0;
+    z-index:5;
+}
+
+#sidebar-container-fluid{
+    position: fixed;
+    top:250px;
+    width:auto;
+    height: auto;
+}
+
+.sidebartoggle {
+    margin-top:auto;
+    font-size: 25px;
+    padding: 10px;
+    cursor: pointer;
+	background-color: #648B79;
+    color: white;
+    border:none;
+}
+
+.sidebartoggle:hover{
+	background-color: #f45342;
+    border:none;
+    outline: none;
+}
+
+.sidebartoggle:focus{
+    outline: none;
+}
+
+.dropdown-menu {
+    margin-left:0;
+    background-color: white;
+    min-width: inherit;
+    border-radius: 0;
+    margin:0;
+    padding:0;
+    text-align:center;
+    cursor:pointer;
+    transition: all 0.4s ease-in-out;
+    z-index:500;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.8); 
+}
+
+.dropdown-menu-hide {
+    margin:-150px;
+    transition: all 0.4s ease-in-out;
+}
+
+.sidebarItems {
+    font-size: 25px;
+    padding: 5px;
+    background-color: inherit;
+    border:none;
+    padding-bottom: 5px;
+    border-bottom: solid 1px darkgrey;
+    color:darkgrey;
+}
+
+.sidebarItems:hover {
+    outline: none;
+	color: #f45342;
+}
+
+.sidebarItems:focus {
+    display: inline;
+    outline: none;
+    color:white;
+}
+
+
+.informationBlock{
+    margin-left:50px;
+    height: auto;
+    width: 800px; 
+    z-index:1;
+}
+
+.active{
+    background-color: #f45342;
+    color:white;
+}
+
+.arrow-right {
+  width: 0; 
+  height: 0; 
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid green;
+}
+
+#d3-chart {
+  width: inherit;
+  height: inherit;
+  background-color: white; 
+}
+
+#impressum, #legend, #geological, #moreInfo{
+    background-color: white;
+}
+  
+.media {
+    padding:20px;
+}
+.d3-chart .axis path,
+.d3-chart .axis line {
+  stroke: blue;
+}
+
+.d3-chart .axis text {
+  fill: whitesmoke;
+}
+.axis {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #999999;
+  
+}
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 4.5px;
+}
+
+#stakeholders{
+    height:50%;
+    cursor: pointer;
+}
+
+#geomaticsGroup{
+    height:auto;
+    padding:10px; 
+}
+
+.fa-linkedin {
+    color:#0099CC;
+    float: right;
+}
+
+#nodeLabels{
+    z-index: 50;
+}
+
+ .Legend{
+    margin-left:50px;
+    height: auto;
+    width: auto;
+    background-color: wheat;
+    padding:20px;
+    z-index:1;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.8);
+}
+.table td {
+    text-align: left;
+    padding: 5px;
+    line-height: 20px;}
+.td, .th {
+    display: table-cell;
+    vertical-align: inherit;}
+.table td {
+  vertical-align: middle;
+}

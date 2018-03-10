@@ -1,6 +1,6 @@
 # Digital Elevation Profile ( Geländeprofil )
 
-So, last semester at HSKA, this [web-application] (https://github.com/enocholumide/Gelaendeprofil_LMZ_HSKA.git) was developed as a course project. It draws digital elevation profile at any cross section drawn by the user on a map. It harmonizies several open source tools and data so it is free to use, copy, distrubute as long as you give credits to the original source.
+So, last semester at HSKA, this [web-application]  was developed as a course project. It draws digital elevation profile at any cross section drawn by the user on a map. It harmonizies several open source tools and data so it is free to use, copy, distrubute as long as you give credits to the original source.
 
 The project can also serve as a template for further development if you want to integrate Leaflet, Angular, Turf and D3 development tools in your personal project.
 
